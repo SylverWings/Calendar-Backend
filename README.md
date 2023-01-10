@@ -10,7 +10,7 @@ editar o borrar el evento.
 ## Deploy en Railway 
 ---
 
-[Link del proyecto en Railway](https://calendar-backend-production-fac4.up.railway.app/) 🌎
+[Link del proyecto en Railway](https://calendar-backend-mongoose.up.railway.app/) 🌎
 
 
 ---
