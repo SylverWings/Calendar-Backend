@@ -34,6 +34,6 @@ app.use("/api", require('./routes/event'));
 
 //escuchar peticiones
 
-app.listen( process.env.MONGO_URI, ()=>{
-    console.log(`Servidor corriendo en puerto ${ process.env.MONGO_URI }`);
+app.listen( process.env.PORT, ()=>{
+    console.log(`Servidor corriendo en puerto ${ process.env.PORT }`);
 } )
