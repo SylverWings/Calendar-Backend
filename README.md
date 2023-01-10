@@ -13,7 +13,7 @@ editar o borrar el evento.
 [Link del proyecto en Railway]( /) 🌎
 
 
-DELETE ---
+---
 
 ## Instrucciones
 
@@ -27,73 +27,73 @@ DELETE ---
 
 ---
 
-<h4>Usuarios</h4>
+<h4><strong>Usuarios</strong></h4>
 
 
 * POST "/api/auth/register" para registrarnos como usurarios.
 
 Ejemplo de campos a enviar/rellenar:
-
+```
 {
     "name": "Susana Horia",
     "email": "shusha@gmail.com",
     "password": "123456789"
 }
-
+```
 <br>
 
 * POST "/api/" para loggearnos como usuarios
 
 Ejemplo de campos a enviar/rellenar:
-
+```
 {
     "email": "shusha@gmail.com",
     "password": "123456789"
 }
+```
+---
+
+<h4><strong>Eventos</strong></h4>
 
 ---
 
-<h4>Eventos</h4>
 
----
-
-
-* GET "/api/event" este Endpoint podremos crear un Evento
+* <strong>GET "/api/event" este Endpoint podremos crear un Evento</strong>
 
 Antes de hacer la request, asegurarse de haber puesto en el token generado con el login en "Authorization/Type: Bearer Token"
 
 <br>
 
-* POST "/api/event" para buscar todos los Eventos
+* <strong>POST "/api/event" para buscar todos los Eventos</strong>
 
-- Se necesita Token
+Se necesita Token
 
 Ejemplo de campos a enviar/rellenar:
-
+```
 {
     "title": "Buscar la piedra del Poder",
     "start": "2",
     "end": "10000000",
     "notes": "Planeta: La Tierra"
 }
+```
+<br>
+
+* <strong>PUT "/api/event/:id" para editar un Evento (solo los usuarios )</strong>
+
+Se necesita Token
 
 <br>
 
-* PUT "/api/event/:id" para editar un Evento (solo los usuarios )
+* <strong>DELETE "/api/event/:id" para eliminar un Evento</strong> 
 
-- Se necesita Token
-
-<br>
-
-* DELETE "/api/event/:id" para eliminar un Evento
-
-- Se necesita Token
+Se necesita Token
 
 <br>
 
 ---
 
-<h4>Herramientas 🛠️</h4>
+<h4><strong>Herramientas</strong> 🛠️</h4>
 
 ---
 
@@ -105,9 +105,8 @@ Ejemplo de campos a enviar/rellenar:
 
 ---
 
-<h4>Diseño y Producido ✒️</h4>
+<h4><strong>Diseño y Producido</strong> ✒️</h4>
 
 ---
-
 
 Lionel M. Garcia Bustos
