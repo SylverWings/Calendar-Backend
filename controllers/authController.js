@@ -91,7 +91,8 @@ authController.login = async(req, res) =>{
             success: true,
             message: 'Loggin user successfully',
             token: token,
-            id: user.id
+            id: user.id,
+            name: user.name
         })
 
     } catch (error) {
