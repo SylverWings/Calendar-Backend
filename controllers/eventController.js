@@ -32,8 +32,7 @@ eventController.create = async(req, res) =>{
         event.userId = req.user_id;
         
         const newEvent = await event.save();
-        console.log(newEvent)
-
+        
         return res.status(200).json({
             success: true,
             message: 'New event created',
