@@ -44,7 +44,7 @@ authController.register =  async(req, res) =>{
             success: true,
             message: 'Create user successfully',
 	    name,
-	    password,
+	    user.id,
             token
         })
 
