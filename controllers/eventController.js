@@ -25,31 +25,19 @@ eventController.getAll = async(req, res) =>{
 
 eventController.create = async(req, res) =>{
 
+    const event = new Event( req.body );
+
     try {
-    
-        const {title, start, end, notes} = req.body;
+
+        event.userId = req.user_id;
         
-        if(!title || !start || !end){
-            return res.status(400).json({
-                success: false,
-                message: 'Title, start date and end date are required'
-            })
-        }
-
-        const newEvent = {
-            title,
-            start,
-            end,
-            notes,
-            userId: req.user_id,
-        };
-
-        await Event.create(newEvent);
+        const newEvent = await event.save();
+        console.log(newEvent)
 
         return res.status(200).json({
             success: true,
             message: 'New event created',
-            event: newEvent
+            event: newEvent,
         })
         
 
