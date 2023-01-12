@@ -16,7 +16,7 @@ const EventSchema = new mongoose.Schema({
         required:true
     },
     end: {
-        type: String,
+        type: Date,
         required: true
     },
     userId: {
