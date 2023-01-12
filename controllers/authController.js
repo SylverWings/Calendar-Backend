@@ -37,14 +37,15 @@ authController.register =  async(req, res) =>{
 
         await User.create(newUser);
 
-        let user = await User.findOne({email});
-        const token = await generateJWT(user.id, user.name)
-
+        const user = await User.findOne({email});
+	let id = user.id
+        const token = await generateJWT(id, user.name)
+	
         return res.status(201).json({
             success: true,
             message: 'Create user successfully',
 	    name,
-	    user.id,
+	    id,
             token
         })
 
