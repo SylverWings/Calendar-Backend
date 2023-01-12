@@ -43,8 +43,8 @@ authController.register =  async(req, res) =>{
         return res.status(201).json({
             success: true,
             message: 'Create user successfully',
-	    newUser.name,
-	    mewUser.password,
+	    name,
+	    password,
             token
         })
 
